@@ -1,28 +1,26 @@
-% bisect.calc — Bisection method for finding a root of f(x) = 0.
+function [c, k] = bisect(fun, a, b, tol)
+% [c, k] = bisect(fun, a, b, tol)
 %
-% Usage:
-%   [c, k] = bisect(fun, a, b, tol)
+% Find a root of fun in the interval [a, b] using the bisection method.
 %
 % Arguments:
 %   fun  — anonymous function, e.g. @(x) x^2 - 2
-%   a, b — interval endpoints; f(a) and f(b) must have opposite signs
+%   a, b — interval endpoints; fun(a) and fun(b) must have opposite signs
 %   tol  — desired absolute tolerance (e.g. 1e-6)
 %
 % Returns:
-%   c — approximate root
+%   c — approximate root (|c - root| <= tol)
 %   k — number of iterations performed
 %
 % Example:
+%   source('bisect.calc')
 %   [c, k] = bisect(@(x) x^2 - 2, 1, 2, 1e-8)
-%   % c ≈ 1.41421356, k = 27
+%   % c = 1.4142135605, k = 27
 %
-% Algorithm: classic bisection — halves the interval each step until the
-% midpoint is within tol of the true root or f(c) = 0 exactly.
-% Required iterations: k = ceil(log2((b - a) / tol))
+% Algorithm: halves the interval each step; converges in
+% k = ceil(log2((b - a) / tol)) iterations.
 %
 % Source: adapted from free-unife/numerical-calculus-octave-scripts (WTFPL)
-
-function [c, k] = bisect(fun, a, b, tol)
   steps = ceil(log2((b - a) / tol));
   [c, k] = bisect_r(fun, a, b, 0, steps);
 end
@@ -40,15 +38,3 @@ function [c, k] = bisect_r(fun, a, b, k, maxSteps)
     [c, k] = bisect_r(fun, c, b, k, maxSteps);
   end
 end
-
-
-% --- Examples ---
-
-fprintf('Example 1: x^2 - 2  (root = sqrt(2))\n')
-[c, k] = bisect(@(x) x^2 - 2, 1, 2, 1e-8)
-
-fprintf('\nExample 2: x^2 - 78.8  (root ≈ 8.877)\n')
-[c, k] = bisect(@(x) x^2 - 78.8, 6, 12, 0.03)
-
-fprintf('\nExample 3: x^3 + 4*x^2 - 10  (root ≈ 1.3653)\n')
-[c, k] = bisect(@(x) x^3 + 4*x^2 - 10, 1, 2, 1e-5)
