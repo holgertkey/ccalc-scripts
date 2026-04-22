@@ -27,13 +27,13 @@ function [root, iter, converged] = newton(f, df, x0, tol, maxiter)
     if abs(dfx) < 1e-15
       fprintf('Warning: derivative too small at x = %.10g\n', x);
       root = x;
-      return;
+      return
     end
     xnew = x - fx / dfx;
     if abs(xnew - x) < tol
       root = xnew;
       converged = 1;
-      return;
+      return
     end
     x = xnew;
   end
