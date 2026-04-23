@@ -36,3 +36,5 @@
 | [math/euler_ode_demo.calc](math/euler_ode_demo.calc) | ODEs | Usage examples for euler_ode.calc |
 | [math/rk4.calc](math/rk4.calc) | ODEs | Classical 4th-order Runge-Kutta — solve y'=f(t,y), O(h⁴) accuracy |
 | [math/rk4_demo.calc](math/rk4_demo.calc) | ODEs | Usage examples for rk4.calc |
+| [math/descriptive.calc](math/descriptive.calc) | Statistics | Descriptive statistics — n, min, max, mean, median, mode, std, var, quartiles, skewness, kurtosis |
+| [math/descriptive_demo.calc](math/descriptive_demo.calc) | Statistics | Usage examples for descriptive.calc |
