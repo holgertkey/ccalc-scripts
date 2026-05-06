@@ -16,7 +16,7 @@ function v = bubble_sort(v)
 % Example:
 %   source('bubble_sort.calc')
 %   bubble_sort([5, 3, 8, 1, 9, 2])   % [1 2 3 5 8 9]
-  n = length(v);
+n = length(v);
   for i = 1:n-1
     for j = 1:n-i
       if v(j) > v(j+1)

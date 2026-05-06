@@ -6,11 +6,11 @@
 % Run (from the directory containing the sort algorithm files):
 %   ccalc sort_algos_demo.calc
 
-source('bubble_sort.calc')
-source('insertion_sort.calc')
-source('selection_sort.calc')
+source('bubble_sort.m')
+source('insertion_sort.m')
+source('selection_sort.m')
 
-v = [64, 34, 25, 12, 22, 11, 90];
+v = [64, 34, 25, 12, 22, 11, 90, 14, 37, 42, 56, 8, 28, 64, 72];
 fprintf('Input:  ')
 for k = 1:length(v); fprintf('%d ', v(k)); end
 fprintf('\n\n')
