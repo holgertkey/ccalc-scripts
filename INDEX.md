@@ -38,3 +38,29 @@
 | [math/rk4_demo.calc](math/rk4_demo.calc) | ODEs | Usage examples for rk4.calc |
 | [math/descriptive.calc](math/descriptive.calc) | Statistics | Descriptive statistics — n, min, max, mean, median, mode, std, var, quartiles, skewness, kurtosis |
 | [math/descriptive_demo.calc](math/descriptive_demo.calc) | Statistics | Usage examples for descriptive.calc |
+| [math/linregress.calc](math/linregress.calc) | Statistics | Simple linear regression — least-squares fit y = a + b*x, returns intercept, slope, R² |
+| [math/linregress_demo.calc](math/linregress_demo.calc) | Statistics | Usage examples for linregress.calc |
+| [math/polyregress.calc](math/polyregress.calc) | Statistics | Polynomial regression via normal equations — fits degree-d polynomial to data |
+| [math/polyregress_demo.calc](math/polyregress_demo.calc) | Statistics | Usage examples for polyregress.calc |
+| [math/normalpdf.calc](math/normalpdf.calc) | Statistics | Normal distribution PDF and CDF via erf — N(mu, sigma) evaluated at x |
+| [math/normalpdf_demo.calc](math/normalpdf_demo.calc) | Statistics | Usage examples for normalpdf.calc |
+| [math/correlation.calc](math/correlation.calc) | Statistics | Pearson correlation coefficient and sample covariance between two vectors |
+| [math/correlation_demo.calc](math/correlation_demo.calc) | Statistics | Usage examples for correlation.calc |
+| [math/primes_sieve.calc](math/primes_sieve.calc) | Utilities | Sieve of Eratosthenes — return all prime numbers up to n |
+| [math/primes_sieve_demo.calc](math/primes_sieve_demo.calc) | Utilities | Usage examples for primes_sieve.calc |
+| [math/gcd_lcm.calc](math/gcd_lcm.calc) | Utilities | GCD and LCM via the Euclidean algorithm — returns both in one call |
+| [math/gcd_lcm_demo.calc](math/gcd_lcm_demo.calc) | Utilities | Usage examples for gcd_lcm.calc |
+| [math/horner.calc](math/horner.calc) | Utilities | Horner's method — polynomial evaluation with O(n) multiplications |
+| [math/horner_demo.calc](math/horner_demo.calc) | Utilities | Usage examples for horner.calc |
+| [math/bubble_sort.calc](math/bubble_sort.calc) | Utilities | Bubble sort — O(n²) sort by adjacent swaps |
+| [math/insertion_sort.calc](math/insertion_sort.calc) | Utilities | Insertion sort — O(n²), O(n) on nearly-sorted input |
+| [math/selection_sort.calc](math/selection_sort.calc) | Utilities | Selection sort — O(n²) comparisons, O(n) swaps |
+| [math/sort_algos_demo.calc](math/sort_algos_demo.calc) | Utilities | Side-by-side comparison of bubble, insertion, and selection sort |
+| [math/compound_interest.calc](math/compound_interest.calc) | Finance | Compound interest — FV = PV*(1+r)^n; also covers PV and annuity formulas |
+| [math/compound_interest_demo.calc](math/compound_interest_demo.calc) | Finance | Usage examples for compound_interest.calc |
+| [math/npv.calc](math/npv.calc) | Finance | Net present value — discounted cash flow sum; positive NPV means add value |
+| [math/npv_demo.calc](math/npv_demo.calc) | Finance | Usage examples for npv.calc |
+| [math/irr.calc](math/irr.calc) | Finance | Internal rate of return — Newton's method on NPV(r)=0 |
+| [math/irr_demo.calc](math/irr_demo.calc) | Finance | Usage examples for irr.calc |
+| [math/loan_amort.calc](math/loan_amort.calc) | Finance | Loan amortization schedule — fixed payment, interest/principal split per period |
+| [math/loan_amort_demo.calc](math/loan_amort_demo.calc) | Finance | Usage examples for loan_amort.calc |
