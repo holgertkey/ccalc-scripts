@@ -3,8 +3,6 @@
 % Run (from the directory containing linregress.calc):
 %   ccalc linregress_demo.calc
 
-source('linregress.calc')
-
 fprintf('=== Example 1: near-perfect line y = 2x + 1 ===\n')
 x = [1 2 3 4 5];
 y = [3.0 5.0 7.0 9.0 11.0];

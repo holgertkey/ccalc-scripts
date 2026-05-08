@@ -3,8 +3,6 @@
 % Run (from the directory containing loan_amort.calc):
 %   ccalc loan_amort_demo.calc
 
-source('loan_amort.calc')
-
 fprintf('=== Example 1: short loan — $1000 at 12%%/yr for 6 months ===\n')
 pmt = loan_amort(1000, 0.12/12, 6);
 fprintf('\n')

@@ -3,8 +3,6 @@
 % Run (from the directory containing polyregress.calc):
 %   ccalc polyregress_demo.calc
 
-source('polyregress.calc')
-
 fprintf('=== Example 1: linear fit (deg=1) ===\n')
 x = [1 2 3 4 5];
 y = [2.1 3.9 6.2 7.8 10.1];

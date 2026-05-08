@@ -3,8 +3,6 @@
 % Run (from the directory containing gcd_lcm.calc):
 %   ccalc gcd_lcm_demo.calc
 
-source('gcd_lcm.calc')
-
 fprintf('=== Example 1: basic GCD and LCM ===\n')
 [g, l] = gcd_lcm(48, 18);
 fprintf('  GCD(48, 18) = %d  (expected 6)\n', g)

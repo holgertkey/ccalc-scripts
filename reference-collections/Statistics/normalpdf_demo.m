@@ -3,8 +3,6 @@
 % Run (from the directory containing normalpdf.calc):
 %   ccalc normalpdf_demo.calc
 
-source('normalpdf.calc')
-
 fprintf('=== Example 1: standard normal N(0,1) ===\n')
 fprintf('  Known values: p(0)=0.3989, F(0)=0.5000\n')
 [p, F] = normalpdf(0);

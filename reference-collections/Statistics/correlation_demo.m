@@ -3,8 +3,6 @@
 % Run (from the directory containing correlation.calc):
 %   ccalc correlation_demo.calc
 
-source('correlation.calc')
-
 fprintf('=== Example 1: perfect positive correlation ===\n')
 x = [1 2 3 4 5];
 y = [2 4 6 8 10];

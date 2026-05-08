@@ -3,8 +3,6 @@
 % Run (from the directory containing primes_sieve.calc):
 %   ccalc primes_sieve_demo.calc
 
-source('primes_sieve.calc')
-
 fprintf('=== Example 1: primes up to 30 ===\n')
 p = primes_sieve(30);
 fprintf('  Primes: ')

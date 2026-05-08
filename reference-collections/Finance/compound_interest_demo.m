@@ -5,8 +5,6 @@
 % Run (from the directory containing compound_interest.calc):
 %   ccalc compound_interest_demo.calc
 
-source('compound_interest.calc')
-
 fprintf('=== Example 1: lump-sum growth ===\n')
 pv = 1000;
 r  = 0.05;

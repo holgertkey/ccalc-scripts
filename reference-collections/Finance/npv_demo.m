@@ -3,8 +3,6 @@
 % Run (from the directory containing npv.calc):
 %   ccalc npv_demo.calc
 
-source('npv.calc')
-
 fprintf('=== Example 1: basic project evaluation ===\n')
 fprintf('  Invest $1000 now; receive 300, 400, 500, 200 over 4 years\n')
 cf = [-1000, 300, 400, 500, 200];

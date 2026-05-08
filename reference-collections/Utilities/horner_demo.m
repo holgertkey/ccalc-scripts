@@ -3,8 +3,6 @@
 % Run (from the directory containing horner.calc):
 %   ccalc horner_demo.calc
 
-source('horner.calc')
-
 fprintf('=== Example 1: roots of x^3 - 6x^2 + 11x - 6 = (x-1)(x-2)(x-3) ===\n')
 c = [1, -6, 11, -6];
 fprintf('  p(1) = %g  (expected 0)\n', horner(c, 1))

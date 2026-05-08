@@ -3,9 +3,6 @@
 % Run (from the directory containing irr.calc and npv.calc):
 %   ccalc irr_demo.calc
 
-source('irr.calc')
-source('npv.calc')
-
 fprintf('=== Example 1: basic IRR ===\n')
 cf = [-1000, 300, 400, 500, 200];
 r = irr(cf);
