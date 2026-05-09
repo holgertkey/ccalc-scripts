@@ -17,5 +17,5 @@ fprintf('  mean = 5, std = 2, slightly left-skewed\n')
 descriptive([2 4 4 4 5 5 7 9])
 
 fprintf('\n=== Example 4: constant vector [5 5 5 5 5] ===\n')
-fprintf('  Expected: std = 0, skewness = 0, kurtosis = NaN\n')
+fprintf('  Expected: std = 0, skewness = NaN, kurtosis = NaN\n')
 descriptive([5 5 5 5 5])
