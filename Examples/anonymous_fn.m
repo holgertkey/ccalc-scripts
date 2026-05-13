@@ -5,13 +5,6 @@
 % Run:
 %   ccalc anonymous_fn.m
 
-function y = apply_twice(f, x)
-% Apply f to x twice: y = f(f(x)).
-  y = f(f(x));
-end
-
-% -------------------------------------------------------------------
-
 % Basic lambda
 fprintf('--- Basic lambda ---\n')
 sq   = @(x) x^2;
@@ -36,6 +29,14 @@ fprintf('\n--- arrayfun ---\n')
 v    = [1, 2, 3, 4, 5];
 v_sq = arrayfun(@(x) x^2, v)
 
-% Passing a function to another function
-fprintf('\n--- Passing functions as arguments ---\n')
-result = apply_twice(@(x) x + 10, 5)
+% Higher-order anonymous functions
+fprintf('\n--- Higher-order functions ---\n')
+apply_twice = @(f, x) f(f(x));   % takes a function, applies it twice: y = f(f(x))
+fprintf('apply_twice(@(x) x+10, 5) = %g\n', apply_twice(@(x) x + 10, 5))
+fprintf('apply_twice(@sqrt, 256)   = %g\n', apply_twice(@sqrt, 256))
+
+% @name syntax to pass a named built-in as a value
+fprintf('\n--- @name references ---\n')
+transform = @sin;
+fprintf('transform(pi/2) = %g\n', transform(pi / 2))
+results = arrayfun(@(x) x^3 - x, [-2, -1, 0, 1, 2])

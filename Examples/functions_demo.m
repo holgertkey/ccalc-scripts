@@ -3,8 +3,17 @@
 % Run:
 %   ccalc functions_demo.m
 
+fprintf('--- Single return value ---\n')
+y = square(5)
+
+fprintf('\n--- Multiple return values ---\n')
+[mn, mx] = minmax([3, 1, 4, 1, 5, 9, 2, 6])
+
+fprintf('\n--- nargin: default argument ---\n')
+r1 = greet('World')
+r2 = greet('Alice')
+
 % -------------------------------------------------------------------
-% Function definitions must appear before the code that calls them.
 
 function y = square(x)
 % Return the square of x.
@@ -24,15 +33,3 @@ function msg = greet(name)
   end
   msg = sprintf('Hello, %s!', name);
 end
-
-% -------------------------------------------------------------------
-
-fprintf('--- Single return value ---\n')
-y = square(5)
-
-fprintf('\n--- Multiple return values ---\n')
-[mn, mx] = minmax([3, 1, 4, 1, 5, 9, 2, 6])
-
-fprintf('\n--- nargin: default argument ---\n')
-r1 = greet('World')
-r2 = greet('Alice')

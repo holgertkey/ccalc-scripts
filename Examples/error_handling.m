@@ -7,18 +7,6 @@
 % Run:
 %   ccalc error_handling.m
 
-function y = safe_divide(a, b)
-% Divide a by b; returns Inf with a warning if b is zero.
-  if b == 0
-    fprintf('Warning: division by zero, returning Inf\n')
-    y = inf;
-    return
-  end
-  y = a / b;
-end
-
-% -------------------------------------------------------------------
-
 fprintf('--- Basic try/catch ---\n')
 try
   error('manual error: %d', 99)
@@ -60,6 +48,18 @@ catch outer
   fprintf('Outer catch: %s\n', outer.message)
 end
 
-fprintf('\n--- Defensive argument checking (pattern) ---\n')
+fprintf('\n--- Defensive argument checking (function pattern) ---\n')
 result = safe_divide(10, 2)
 result = safe_divide(10, 0)
+
+% -------------------------------------------------------------------
+
+function y = safe_divide(a, b)
+% Divide a by b; returns Inf with a warning if b is zero.
+  if b == 0
+    fprintf('Warning: division by zero, returning Inf\n')
+    y = inf;
+    return
+  end
+  y = a / b;
+end
