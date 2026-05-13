@@ -76,3 +76,4 @@
 | [Examples/format_output.m](Examples/format_output.m) | Examples | printf-style formatting — fprintf, sprintf, %d/%f/%e/%g/%s, width, precision, flags |
 | [Examples/error_handling.m](Examples/error_handling.m) | Examples | try/catch error handling — error(), lasterr(), nested catch, defensive patterns |
 | [Examples/file_io.m](Examples/file_io.m) | Examples | File I/O — fopen/fclose/fgetl/fprintf, dlmread/dlmwrite, isfile |
+| [Examples/hoisting_demo.calc](Examples/hoisting_demo.calc) | Examples | Function hoisting — helpers defined after call sites, chained calls, mutual recursion |
