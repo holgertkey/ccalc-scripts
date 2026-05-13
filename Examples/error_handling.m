@@ -21,11 +21,14 @@ end
 
 fprintf('--- Basic try/catch ---\n')
 try
-  x = 1 / 0;
-  fprintf('1/0 = %g\n', x)
+  error('manual error: %d', 99)
 catch e
   fprintf('Caught: %s\n', e.message)
 end
+
+fprintf('\n--- 1/0 gives Inf (IEEE 754, no error) ---\n')
+x = 1 / 0
+n = 0 / 0
 
 fprintf('\n--- Catching a user-thrown error ---\n')
 try

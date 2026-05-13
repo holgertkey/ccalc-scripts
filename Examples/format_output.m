@@ -28,7 +28,7 @@ fprintf('%10s\n',  name)
 fprintf('%-10s|\n', name)
 
 fprintf('\n--- sprintf: build a string ---\n')
-msg = sprintf('Value: %+.4f, answer: %05d', pi, 255)
+msg = sprintf('Value: %+.4f, hex: %04X', pi, 255)
 
 fprintf('\n--- Multiple values per format string ---\n')
 v = [1, 2, 3, 4];

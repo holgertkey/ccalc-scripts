@@ -32,7 +32,7 @@ z1_sq = z1^2
 
 fprintf('\n--- Euler''s formula: e^(i*theta) = cos(theta) + i*sin(theta) ---\n')
 theta = pi / 3;
-euler = cos(theta) + 1i * sin(theta)
+euler = exp(1i * theta)
 expected_re = cos(theta)
 expected_im = sin(theta)
 
@@ -43,4 +43,4 @@ fprintf('\n--- Polar form ---\n')
 r   = abs(z1);
 phi = angle(z1);
 fprintf('z1 in polar: r=%.4f, phi=%.4f rad (%.2f deg)\n', r, phi, phi*180/pi)
-z_from_polar = r * (cos(phi) + 1i * sin(phi))
+z_from_polar = r * exp(1i * phi)
