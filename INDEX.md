@@ -64,3 +64,15 @@
 | [Finance/irr_demo.m](Finance/irr_demo.m) | Finance | Usage examples for irr.m |
 | [Finance/loan_amort.m](Finance/loan_amort.m) | Finance | Loan amortization schedule — fixed payment, interest/principal split per period |
 | [Finance/loan_amort_demo.m](Finance/loan_amort_demo.m) | Finance | Usage examples for loan_amort.m |
+| [Examples/hello_world.m](Examples/hello_world.m) | Examples | First steps: print output and basic arithmetic |
+| [Examples/variables_types.m](Examples/variables_types.m) | Examples | All value types with display — Scalar, Matrix, Complex, Str, StringObj, Cell, Struct |
+| [Examples/control_flow.m](Examples/control_flow.m) | Examples | All control flow constructs — if/elseif/else, for, while, do-until, switch, break, continue |
+| [Examples/functions_demo.m](Examples/functions_demo.m) | Examples | Named functions: single return, multiple returns, nargin default arguments |
+| [Examples/anonymous_fn.m](Examples/anonymous_fn.m) | Examples | Anonymous functions: @(x) syntax, closures, arrayfun, passing functions as arguments |
+| [Examples/string_ops.m](Examples/string_ops.m) | Examples | String manipulation — strcmp, strsplit, strrep, strcat, num2str, mat2str, sprintf |
+| [Examples/cell_array_demo.m](Examples/cell_array_demo.m) | Examples | Cell arrays: create, access, iterate, cellfun, mixed types |
+| [Examples/struct_demo.m](Examples/struct_demo.m) | Examples | Structs: fields, nested structs, fieldnames, isfield, rmfield, struct arrays |
+| [Examples/complex_numbers.m](Examples/complex_numbers.m) | Examples | Complex arithmetic — real, imag, abs, angle, conj, 4i syntax, Euler's formula |
+| [Examples/format_output.m](Examples/format_output.m) | Examples | printf-style formatting — fprintf, sprintf, %d/%f/%e/%g/%s, width, precision, flags |
+| [Examples/error_handling.m](Examples/error_handling.m) | Examples | try/catch error handling — error(), lasterr(), nested catch, defensive patterns |
+| [Examples/file_io.m](Examples/file_io.m) | Examples | File I/O — fopen/fclose/fgetl/fprintf, dlmread/dlmwrite, isfile |
