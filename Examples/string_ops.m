@@ -44,5 +44,5 @@ parts = strsplit(csv, ',')
 fprintf('Second item: %s\n', parts{2})
 
 fprintf('\n--- Type checks ---\n')
-fprintf('ischar("hello")  = %d\n', ischar('hello'))
+fprintf("ischar('hello')   = %d\n", ischar('hello'))
 fprintf('isstring("hello") = %d\n', isstring("hello"))
